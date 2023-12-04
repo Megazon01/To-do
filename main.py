@@ -2,7 +2,7 @@
 import functions
 import time
 
-
+print("Welcome to your To-do list!")
 print(time.strftime("%H:%M %b %d - %Y"))
 while True:
     user_action = input("Type stop, add, amount remaining, complete, edit or show: ")
