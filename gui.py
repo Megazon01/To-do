@@ -39,8 +39,9 @@ while True:
             functions.write_todos(todos)
             Window["todos"].update(values=todos)
 
-        #case "todos":
-        #    Window["todo"].update(value=values["todos"][0])
+        case "todos":
+            strip_todo = values["todos"][0].strip("\n")
+            Window["todo"].update(value=strip_todo)
 
 
         case sg.WIN_CLOSED:
